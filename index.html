@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<title>
+			Booktopia
+		</title>
+		<link rel="stylesheet" href="booktopia_style.css" type="text/css">
+		<link href='http://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="student.js"></script>
+	</head>
+	<body onLoad="javascript:popupAd()">
+		<div id="date">
+			<script type="text/javascript">
+				document.write(getDate());
+			</script>
+			(lab 9)
+		</div>
+		<h1 style="text-align: center">Booktopia</h1>
+		<div id="searchBox">
+			<FORM NAME="searchbox">
+   				<INPUT TYPE="TEXT" NAME="searchterm">
+  				<INPUT TYPE="BUTTON" VALUE="Search" ONCLICK="Javascript:doSearch()">
+			</FORM>
+		</div>
+		<hr />
+		<br />
+		<div style="text-align: center">
+			<ul class="menu">
+				<li class="menu"><a href="Javascript:displayspecial()" class="menu">Todays Special (Lab 3)</a></li>
+				<li class="menu"><a href="Javascript:changetype()" class="menu">Change Customer Type (Lab 4)</a></li>
+				<li class="menu"><a href="Javascript:displaytype()" class="menu">Display Message (Lab 4)</a></li>
+				<li class="menu"><a href="Javascript:popupAd();">Change Popup Add (Lab 13)</a></li>
+			</ul>
+		</div>
+		<div style="text-align: center">
+			<ul class="menu">
+				<li class="menu"><a href="Javascript:buildProduct('Young Titan: The Making of Winston Churchill', 'bob smith','978-1451609912','Biography of Winston Churchill\'s career from 1901 through 1915.', '$9.95')">Young Titan: The Making of Winston Churchill (Lab 5)</a></li>
+				<li class="menu"><a href="Javascript:buildProduct('Animal Farm', 'George Orwell', '978-1412811903', 'George Orwell\'s famous fabel of a workers revolution gone awry', '$6.50')">Animal Farm (Lab 5)</a></li>
+				<li class="menu"><a href="Javascript:buildProduct('The Mysterious Island [Paperback]', 'Jules Verne', '978-1613822364','Verne\'s classic tale of five Americans who are stranded on an uncharted island.', '$7.25')">The Mysterious Island [Paperback] (Lab 5)</a></li>
+				<li class="menu"><a href="Javascript:buildBlackjack();">Play Blackjack (Lab 10)</a></li>
+				<li class="menu"><a href="Javascript:buildForm();">Show Form (Labs 14-15)</a></li>
+			</ul>
+		</div>
+		<IFRAME src="" width="100%" height="400px" id="productarea" name="productarea" frameborder="0" marginheight="0">
+			Warning your Browser does not support IFRAMES
+		</IFRAME>	
+		<hr />
+		<div id="footer">
+			<div id="bannerAd">
+				<a href="Javascript: displayPage()"><img src="978-1412811903.jpg" id="imgLeft" onmouseover="changeImage('imgLeft', '978-1613822364.jpg'); changeImage('imgRight', 'banner_2.png')" /></a>
+				<a href="Javascript: displayPage()"><img src="banner_1.png" id="imgRight" /></a>
+			</div> <!-- end of bannerAd -->
+			<div>(lab 7)</div>
+			<script type='text/javascript'>document.writeln(makeColorTableTag())</script>
+			<h3>You are viewing this page using
+				<script type='text/javascript'>document.writeln(getType() + "  " + getVersion())</script>
+			</h3>
+			</div>
+			<br />
+			<br />
+			<label>Favorite Links (lab 1):</label>
+			<a href="Javascript:confirmlink('http://www.amazon.com')">Amazon.com</A>, <A HREF="Javascript:confirmlink('http://www.barnesandnoble.com')">Barnes and Nobel</A>, <A HREF="Javascript:confirmlink('http://www.college1.com/users/pstephens2601@gmail.com')">My COC Site</a>
+			<br />
+			<a href="Javascript:displayInfo()" style="text-align: center;">Web Page Information</a>
+		</div>
+	</body>
+</html>
